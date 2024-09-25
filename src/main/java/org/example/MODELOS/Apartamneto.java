@@ -8,17 +8,19 @@ public class Apartamneto {
     private int numeroHabitaciones;
     private String direccion;
     private Boolean tieneBalcon;
+    private String barrio;
 
     public Apartamneto() {
     }
 
-    public Apartamneto(Long id, String nombreConstructora, Double metroCuadrados, int numeroHabitaciones, String direccion, Boolean tieneBalcon) {
+    public Apartamneto(Long id, String nombreConstructora, Double metroCuadrados, int numeroHabitaciones, String direccion, Boolean tieneBalcon, String barrio) {
         this.id = id;
         this.nombreConstructora = nombreConstructora;
         this.metroCuadrados = metroCuadrados;
         this.numeroHabitaciones = numeroHabitaciones;
         this.direccion = direccion;
         this.tieneBalcon = tieneBalcon;
+        this.barrio = barrio;
     }
 
     public Long getId() {
@@ -69,6 +71,14 @@ public class Apartamneto {
         this.tieneBalcon = tieneBalcon;
     }
 
+    public String getBarrio() {
+        return barrio;
+    }
+
+    public void setBarrio(String barrio) {
+        this.barrio = barrio;
+    }
+
     @Override
     public String toString() {
         return "Apartamneto{" +
@@ -78,6 +88,7 @@ public class Apartamneto {
                 ", numeroHabitaciones=" + numeroHabitaciones +
                 ", direccion='" + direccion + '\'' +
                 ", tieneBalcon=" + tieneBalcon +
+                ", barrio='" + barrio + '\'' +
                 '}';
     }
 }

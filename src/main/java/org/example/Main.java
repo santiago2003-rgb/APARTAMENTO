@@ -16,6 +16,9 @@ public class Main {
         System.out.println("Direccion del apartamento: ");
         apartamento.setDireccion(lea.nextLine());
 
+        System.out.println("Barrio donde se encuentra: ");
+        apartamento.setBarrio(lea.nextLine());
+
         System.out.println("Metros cuadrados: ");
         apartamento.setMetroCuadrados(lea.nextDouble());
 
